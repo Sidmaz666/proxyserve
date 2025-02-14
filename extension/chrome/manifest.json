@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Forward Proxy Toggle",
+  "version": "1.0",
+  "description": "Toggle your forward proxy server on/off.",
+  "permissions": [
+    "proxy",
+    "storage",
+    "tabs",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Proxy Toggle"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}

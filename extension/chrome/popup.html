@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proxy Toggle</title>
+    <!-- Tailwind CSS CDN (minimal) -->
+    <link
+      href="https://unpkg.com/tailwindcss@2.0.1/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        min-width: 300px;
+        width: auto;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body class="w-full bg-black text-white">
+    <div class="max-w-sm mx-auto p-6">
+      <h1 class="text-2xl font-bold mb-4 text-center">Proxy Toggle</h1>
+      <div class="flex items-center justify-center mb-4">
+        <button
+          id="toggleBtn"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Activate Proxy
+        </button>
+      </div>
+      <div class="text-center" id="statusText">Proxy is off</div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
